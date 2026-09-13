@@ -106,9 +106,12 @@ local function _0x1d(_0x1e)
                task.wait(0.5)
                
                pcall(function()
-                   local _0x28 = { [1] = game:GetService("Players").Chhloepod89 }
-                   game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(_0x28))
-               end)
+                   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
+
 
                task.wait(0.5)
 
@@ -167,3 +170,4 @@ task.spawn(function()
         _0x1d(_0x32)
     end)
 end)
+
